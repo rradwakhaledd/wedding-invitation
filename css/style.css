@@ -143,9 +143,9 @@ body {
 .fade-top-4 {
     animation: growth 1.2s ease-in-out;
 }
-.card section.intro .content p.title{
+/* .card section.intro .content p.title{
     font-size: 15px;
-}
+} */
 
 @keyframes growth {
     0% {
@@ -308,7 +308,7 @@ section {
     margin-bottom: 30px;
     color: #111111;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
