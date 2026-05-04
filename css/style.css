@@ -213,6 +213,26 @@ body {
 }
 
 
+
+.text-btno {
+    display: inline-block;
+    padding: 19px 20px;
+    background: #729068;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: "Allura", cursive;
+    transition: 0.3s;
+}
+
+/* .location-btno:hover {
+    background: #4D6045;
+    transform: scale(1.05);
+    color: white;
+} */
+
+
 /*============================================================================================
     # Background Animation
 ============================================================================================*/
