@@ -195,7 +195,7 @@ function addAppleCalendar() {
  *  Location for Google and Waze
   ======================================================= */
 function openGoogleMaps() {
-    window.open("https://maps.app.goo.gl/SGrtE2ACbUKjdhhJ6", "_blank");
+    window.open("https://maps.app.goo.gl/ekgkJmYaGKHf5Bwf8", "_blank");
 }
 // function openWaze() {
 //     const latitude = 3.1575;  // Example latitude
