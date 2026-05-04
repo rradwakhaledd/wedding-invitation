@@ -26,8 +26,28 @@ document.getElementById("toggle-content").addEventListener("click", function () 
     }, { once: true });
 
     // Play the audio
+    // const audioPlayer = document.getElementById("audio-player");
+    // audioPlayer.play();  // Start playing the audio
     const audioPlayer = document.getElementById("audio-player");
-    audioPlayer.play();  // Start playing the audio
+
+// يبدأ من ثانية 34
+audioPlayer.currentTime = 34;
+
+// نبدأ الصوت من 0 علشان نعمل fade in
+audioPlayer.volume = 0;
+
+audioPlayer.play();
+
+// Fade in خلال 3 ثواني
+let volume = 0;
+const fadeIn = setInterval(() => {
+    if (volume < 1) {
+        volume += 0.05;
+        audioPlayer.volume = volume;
+    } else {
+        clearInterval(fadeIn);
+    }
+}, 150);
 });
 
 
