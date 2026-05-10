@@ -86,11 +86,66 @@
     transform: rotate(-45deg) translateY(10px);
   }
 }
+        .scroll-down-btn{
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: #729068;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: 0.3s ease;
+    animation: bounceDown 1.5s infinite;
+}
+
+.scroll-down-btn:hover{
+    transform: scale(1.1);
+    background: #5f7c56;
+}
+
+@keyframes bounceDown{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+}
+
+/* موبايل */
+@media(max-width:768px){
+    .scroll-down-btn{
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+        bottom: 20px;
+        right: 15px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
 </style>
 
 </head>
 
 <body>
+    <!-- Scroll Down Button -->
+<a href="#bottom" class="scroll-down-btn">
+    <i class="fa-solid fa-chevron-down"></i>
+</a>
+
+<!-- آخر الصفحة -->
+<div id="bottom"></div>
     <div class="wrapper">
         <div id="overlay" class="overlay">
             <div class="overlay-content">
